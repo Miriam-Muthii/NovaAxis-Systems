@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Miriam Muthoni Muthii – Full Stack Software Developer & AI Developer based in Nairobi, Kenya. Building scalable web apps, ERP integrations, fintech systems and AI-powered tools." />
+  <meta name="keywords" content="Full Stack Developer, AI Developer, Nairobi, Kenya, React, Angular, FastAPI, LangChain, ERP, Fintech" />
+  <meta name="author" content="Miriam Muthoni Muthii" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Miriam Muthoni | Full Stack & AI Developer" />
+  <meta property="og:description" content="Full-stack developer who turns business requirements into reliable software — from responsive front-ends and APIs to ERP integrations and AI-powered applications." />
+  <meta property="og:image" content="assets/img/profile.jpg" />
+  <meta property="og:url" content="https://novaaxissystems.vercel.app/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Miriam Muthoni | Full Stack & AI Developer" />
+  <meta name="twitter:description" content="Full-stack developer who turns business requirements into reliable software." />
+  <meta name="twitter:image" content="assets/img/profile.jpg" />
+
+  <title>Miriam Muthoni | Full Stack & AI Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       SIDEBAR
+  ═══════════════════════════════════════════ -->
+  <aside class="sidebar" id="sidebar" role="navigation" aria-label="Main navigation">
+
+    <!-- Sidebar close button (mobile) -->
+    <button class="sidebar-close" id="sidebarClose" aria-label="Close navigation">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <!-- Profile block -->
+    <div class="sidebar-profile">
+      <div class="profile-img-wrap">
+        <img
+          src="assets/img/profile.jpg"
+          alt="Miriam Muthoni Muthii – profile photo"
+          class="profile-img"
+          width="100"
+          height="100"
+          onerror="this.src='assets/img/avatar-placeholder.svg'"
+        />
+      </div>
+      <h1 class="sidebar-name">Miriam Muthoni</h1>
+      <p class="sidebar-tagline">Full Stack &amp; AI Developer</p>
+
+      <!-- Social icons -->
+      <div class="sidebar-socials" role="list">
+        <a href="https://www.linkedin.com/in/miriam-muthoni/" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="LinkedIn profile">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/Miriam-Muthii" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="GitHub profile">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="mailto:miriammuthoni29@gmail.com" role="listitem" aria-label="Send email">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+        <a href="https://wa.me/254702944564" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="WhatsApp">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+
+      <!-- Download CV -->
+      <a href="assets/img/cv.pdf" download class="btn-cv" aria-label="Download Miriam's CV">
+        <i class="bi bi-download"></i> Download CV
+      </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sidebar-nav">
+      <ul role="list">
+        <li>
+          <a href="#home" class="nav-link active" data-section="home">
+            <i class="bi bi-house-fill"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link" data-section="about">
+            <i class="bi bi-person-fill"></i>
+            <span>About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="nav-link" data-section="skills">
+            <i class="bi bi-code-slash"></i>
+            <span>Skills</span>
+          </a>
+        </li>
+        <li>
+          <a href="#resume" class="nav-link" data-section="resume">
+            <i class="bi bi-file-earmark-text-fill"></i>
+            <span>Resume</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-link" data-section="projects">
+            <i class="bi bi-grid-fill"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#services" class="nav-link" data-section="services">
+            <i class="bi bi-gear-fill"></i>
+            <span>Services</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link" data-section="contact">
+            <i class="bi bi-chat-dots-fill"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Sidebar footer -->
+    <div class="sidebar-footer">
+      <p>&copy; <span id="year"></span> NovaAxis Systems</p>
+    </div>
+
+  </aside>
+
+  <!-- Sidebar overlay (mobile) -->
+  <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════
+       TOP BAR (mobile/tablet)
+  ═══════════════════════════════════════════ -->
+  <header class="topbar" role="banner">
+    <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">
+      <span></span><span></span><span></span>
+    </button>
+    <span class="topbar-brand">Miriam Muthoni</span>
+    <button class="theme-toggle topbar-theme" id="themeToggleTop" aria-label="Toggle light/dark mode">
+      <i class="bi bi-moon-stars-fill"></i>
+    </button>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════ -->
+  <main class="main-content" id="main">
+
+    <!-- ── Theme toggle (desktop, inside main) -->
+    <button class="theme-toggle desktop-theme" id="themeToggleDesktop" aria-label="Toggle light/dark mode">
+      <i class="bi bi-moon-stars-fill"></i>
+    </button>
+
+    <!-- ══════════════════════════════
+         SECTION: HOME / HERO
+    ══════════════════════════════ -->
+    <section id="home" class="section hero-section" aria-label="Introduction">
+      <!-- Animated tech background canvas -->
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+      <!-- Grid overlay -->
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h2 class="hero-name">Miriam Muthoni<span class="accent">.</span></h2>
+
+        <!-- Typing animation -->
+        <div class="hero-title-wrap" aria-live="polite" aria-label="Job title animation">
+          <span class="hero-title-prefix">I'm a </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="typed-cursor" aria-hidden="true">|</span>
+        </div>
+
+        <p class="hero-intro">
+          Full-stack developer who turns business requirements into reliable software —
+          from responsive front-ends and APIs to ERP integrations and AI-powered applications.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="bi bi-grid-fill"></i> View Projects
+          </a>
+          <a href="assets/img/cv.pdf" download class="btn btn-outline">
+            <i class="bi bi-download"></i> Download CV
+          </a>
+        </div>
+
+        <!-- Quick contact badges -->
+        <div class="hero-badges">
+          <span class="badge-item">
+            <i class="bi bi-geo-alt-fill"></i> Nairobi, Kenya
+          </span>
+          <span class="badge-item">
+            <i class="bi bi-briefcase-fill"></i> Open to Remote · Hybrid · Onsite
+          </span>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         SECTION: ABOUT
+    ══════════════════════════════ -->
+    <section id="about" class="section about-section" aria-label="About Miriam">
+      <div class="section-header">
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <div class="section-line" aria-hidden="true"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Photo column -->
+        <div class="about-photo-col">
+          <div class="about-img-wrap">
+            <img
+              src="assets/img/profile.jpg"
+              alt="Miriam Muthoni Muthii"
+              class="about-img"
+              loading="lazy"
+              width="380"
+              height="420"
+              onerror="this.src='assets/img/avatar-placeholder.svg'"
+            />
+            <div class="about-img-badge">
+              <i class="bi bi-patch-check-fill"></i> Available for Work
+            </div>
+          </div>
+        </div>
+
+        <!-- Text column -->
+        <div class="about-text-col">
+          <h3 class="about-subtitle">Full Stack Developer &amp; AI Developer</h3>
+
+          <p class="about-para">
+            I design and build scalable web applications, enterprise HR and ERP platforms,
+            fintech systems, and AI-powered tools that solve real business problems.
+          </p>
+          <p class="about-para">
+            My background spans fintech, HR tech and enterprise software. I've built HR platforms
+            including ERP systems, fintech systems such as reconciliation platforms, USSD and ERP
+            integrated solutions, and QA systems for a 1,000+ agent BPO. I've also built
+            AI-integrated applications for analysis and retrieval, including IVR analytics and Quera.
+          </p>
+          <p class="about-para">
+            I'm known for critical thinking, troubleshooting, research and implementation,
+            flexibility and adaptability, and working closely with non-technical stakeholders.
+          </p>
+
+          <!-- Info grid -->
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="bi bi-envelope-fill accent"></i>
+              <div>
+                <span class="info-label">Email</span>
+                <a href="mailto:miriammuthoni29@gmail.com" class="info-value">miriammuthoni29@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-telephone-fill accent"></i>
+              <div>
+                <span class="info-label">Phone / WhatsApp</span>
+                <a href="tel:+254702944564" class="info-value">+254 702 944 564</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-geo-alt-fill accent"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Nairobi, Kenya</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="bi bi-briefcase-fill accent"></i>
+              <div>
+                <span class="info-label">Open to</span>
+                <span class="info-value">Remote · Hybrid · Onsite</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="assets/img/cv.pdf" download class="btn btn-primary about-cv-btn">
+            <i class="bi bi-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+
+      <!-- Stat counters -->
+      <div class="stats-grid" aria-label="Key statistics">
+        <div class="stat-card" data-target="3" data-suffix="+">
+          <div class="stat-icon"><i class="bi bi-calendar-check-fill"></i></div>
+          <div class="stat-number"><span class="counter">0</span><span class="stat-suffix">+</span></div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card" data-target="15" data-suffix="+">
+          <div class="stat-icon"><i class="bi bi-folder-fill"></i></div>
+          <div class="stat-number"><span class="counter">0</span><span class="stat-suffix">+</span></div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-card" data-target="10000" data-suffix="+">
+          <div class="stat-icon"><i class="bi bi-people-fill"></i></div>
+          <div class="stat-number"><span class="counter">0</span><span class="stat-suffix">+</span></div>
+          <div class="stat-label">Users on PulseAutoQA</div>
+        </div>
+        <div class="stat-card" data-target="9" data-suffix="">
+          <div class="stat-icon"><i class="bi bi-award-fill"></i></div>
+          <div class="stat-number"><span class="counter">0</span><span class="stat-suffix"></span></div>
+          <div class="stat-label">Courses &amp; Certifications</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         SECTION: SKILLS
+    ══════════════════════════════ -->
+    <section id="skills" class="section skills-section" aria-label="Skills">
+      <div class="section-header">
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+        <div class="section-line" aria-hidden="true"></div>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Languages -->
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i class="bi bi-code-square"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i class="bi bi-layout-wtf"></i>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Angular Material</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Accessibility</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+        </div>
+
+        <!-- Backend & APIs -->
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i class="bi bi-server"></i>
+            <h3>Backend &amp; APIs</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">SQLAlchemy ORM</span>
+            <span class="skill-tag">RESTful APIs</span>
+            <span class="skill-tag">Swagger</span>
+            <span class="skill-tag">OAuth</span>
+          </div>
+        </div>
+
+        <!-- Databases & Cloud -->
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i class="bi bi-database-fill"></i>
+            <h3>Databases &amp; Cloud</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">pgvector</span>
+            <span class="skill-tag">Qdrant</span>
+            <span class="skill-tag">Azure DevOps</span>
+            <span class="skill-tag">Azure Container Registry</span>
+          </div>
+        </div>
+
+        <!-- ERP & CMS -->
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i class="bi bi-building-fill"></i>
+            <h3>ERP &amp; Enterprise</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">ERP Implementation</span>
+            <span class="skill-tag">ERP Integration</span>
+            <span class="skill-tag">HR Platforms</span>
+            <span class="skill-tag">Recruitment Systems</span>
+            <span class="skill-tag">Reconciliation Systems</span>
+            <span class="skill-tag">USSD Integration</span>
+            <span class="skill-tag">Finacle</span>
+          </div>
+        </div>
+
+        <!-- AI & ML -->
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i class="bi bi-cpu-fill"></i>
+            <h3>AI &amp; ML</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Generative AI</span>
+            <span class="skill-tag">RAG Pipelines</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">LLM Integration</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Embeddings</span>
+            <span class="skill-tag">LLM Evaluation</span>
+            <span class="skill-tag">Agentic Workflows</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">CrewAI</span>
+            <span class="skill-tag">vLLM</span>
+            <span class="skill-tag">Ollama</span>
+            <span class="skill-tag">OpenAI API</span>
+            <span class="skill-tag">Claude API</span>
+            <span class="skill-tag">MCP</span>
+          </div>
+        </div>
+
+        <!-- DevOps & Quality -->
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i class="bi bi-shield-check"></i>
+            <h3>DevOps &amp; Quality</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Podman</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">OpenTelemetry</span>
+            <span class="skill-tag">Prometheus</span>
+            <span class="skill-tag">Grafana</span>
+            <span class="skill-tag">Unit Testing</span>
+            <span class="skill-tag">Functional Testing</span>
+            <span class="skill-tag">QA</span>
+            <span class="skill-tag">Root Cause Analysis</span>
+            <span class="skill-tag">Agile</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         SECTION: RESUME
+    ══════════════════════════════ -->
+    <section id="resume" class="section resume-section" aria-label="Resume">
+      <div class="section-header">
+        <h2 class="section-title">My <span class="accent">Resume</span></h2>
+        <div class="section-line" aria-hidden="true"></div>
+        <p class="section-subtitle">Education, experience and certifications</p>
+      </div>
+
+      <div class="resume-grid">
+
+        <!-- Education column -->
+        <div class="resume-col">
+          <h3 class="resume-col-title">
+            <i class="bi bi-mortarboard-fill"></i> Education
+          </h3>
+
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="timeline-date">2017 – 2021</span>
+                <h4 class="timeline-title">BSc Biochemistry – 1st Class Honours</h4>
+                <p class="timeline-org">University of Nairobi</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="timeline-date">2013 – 2016</span>
+                <h4 class="timeline-title">KCSE Certificate</h4>
+                <p class="timeline-org">Loreto High School Limuru</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Experience column -->
+        <div class="resume-col">
+          <h3 class="resume-col-title">
+            <i class="bi bi-briefcase-fill"></i> Experience
+          </h3>
+
+          <div class="timeline">
+
+            <!-- Placeholder experience items — update from CV -->
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="timeline-date timeline-placeholder-note"><!-- Replace with dates from CV --></span>
+                <h4 class="timeline-title"><!-- Role from CV --><span class="placeholder-text">[Role – add from CV]</span></h4>
+                <p class="timeline-org"><!-- Company --><span class="placeholder-text">[Company]</span></p>
+                <ul class="timeline-achievements">
+                  <li><span class="placeholder-text">[Achievement 1 from CV]</span></li>
+                  <li><span class="placeholder-text">[Achievement 2 from CV]</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="timeline-date"></span>
+                <h4 class="timeline-title"><span class="placeholder-text">[Role – add from CV]</span></h4>
+                <p class="timeline-org"><span class="placeholder-text">[Company]</span></p>
+                <ul class="timeline-achievements">
+                  <li><span class="placeholder-text">[Achievement 1 from CV]</span></li>
+                  <li><span class="placeholder-text">[Achievement 2 from CV]</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <span class="timeline-date"></span>
+                <h4 class="timeline-title"><span class="placeholder-text">[Role – add from CV]</span></h4>
+                <p class="timeline-org"><span class="placeholder-text">[Company]</span></p>
+                <ul class="timeline-achievements">
+                  <li><span class="placeholder-text">[Achievement 1 from CV]</span></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
+      <div class="certs-block">
+        <h3 class="resume-col-title cert-title">
+          <i class="bi bi-award-fill"></i> Certifications
+        </h3>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <i class="bi bi-patch-check-fill accent"></i>
+            <span>Building with the Claude API</span>
+          </div>
+          <div class="cert-card">
+            <i class="bi bi-patch-check-fill accent"></i>
+            <span>Claude Code in Action</span>
+          </div>
+          <div class="cert-card">
+            <i class="bi bi-patch-check-fill accent"></i>
+            <span>Introduction to Agent Skills</span>
+          </div>
+          <div class="cert-card">
+            <i class="bi bi-patch-check-fill accent"></i>
+            <span>Introduction to Model Context Protocol</span>
+          </div>
+          <div class="cert-card">
+            <i class="bi bi-patch-check-fill accent"></i>
+            <span>Generative AI: Introduction to Large Language Models</span>
+          </div>
+          <div class="cert-card">
+            <i class="bi bi-patch-check-fill accent"></i>
+            <span>Introduction to Prompt Engineering for Generative AI (2023)</span>
+          </div>
+          <div class="cert-card">
+            <i class="bi bi-patch-check-fill accent"></i>
+            <span>Java Algorithms, Data Structures, Collections &amp; Exception Handling</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         SECTION: PROJECTS
+    ══════════════════════════════ -->
+    <section id="projects" class="section projects-section" aria-label="Projects">
+      <div class="section-header">
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+        <div class="section-line" aria-hidden="true"></div>
+        <p class="section-subtitle">A selection of work I've built and shipped</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs" role="tablist" aria-label="Project category filter">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Apps</button>
+        <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI &amp; ML</button>
+        <button class="filter-btn" data-filter="erp" role="tab" aria-selected="false">ERP &amp; Fintech</button>
+        <button class="filter-btn" data-filter="api" role="tab" aria-selected="false">APIs &amp; Data</button>
+      </div>
+
+      <!-- Projects grid -->
+      <div class="projects-grid" id="projectsGrid" role="list">
+
+        <!-- ── PLACEHOLDER PROJECT 1 ── -->
+        <article class="project-card" data-category="web" role="listitem">
+          <div class="project-img-wrap">
+            <img
+              src="assets/img/project-placeholder.svg"
+              alt="Project screenshot placeholder"
+              class="project-img"
+              loading="lazy"
+              width="400"
+              height="220"
+            />
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View live project (placeholder)">
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="View GitHub repository (placeholder)">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category-tag">Web App</div>
+            <h3 class="project-title">Project Title <span class="placeholder-text">[Replace Me]</span></h3>
+            <p class="project-desc">
+              <span class="placeholder-text">Short project description — what it does, who it's for, and the impact it had.</span>
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag placeholder-text">[Add tech]</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PLACEHOLDER PROJECT 2 ── -->
+        <article class="project-card" data-category="ai" role="listitem">
+          <div class="project-img-wrap">
+            <img
+              src="assets/img/project-placeholder.svg"
+              alt="Project screenshot placeholder"
+              class="project-img"
+              loading="lazy"
+              width="400"
+              height="220"
+            />
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View live project (placeholder)">
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="View GitHub repository (placeholder)">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category-tag">AI &amp; ML</div>
+            <h3 class="project-title">AI Project Title <span class="placeholder-text">[Replace Me]</span></h3>
+            <p class="project-desc">
+              <span class="placeholder-text">Short project description — what it does, who it's for, and the impact it had.</span>
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag placeholder-text">[Add tech]</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PLACEHOLDER PROJECT 3 ── -->
+        <article class="project-card" data-category="erp" role="listitem">
+          <div class="project-img-wrap">
+            <img
+              src="assets/img/project-placeholder.svg"
+              alt="Project screenshot placeholder"
+              class="project-img"
+              loading="lazy"
+              width="400"
+              height="220"
+            />
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View live project (placeholder)">
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="View GitHub repository (placeholder)">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category-tag">ERP &amp; Fintech</div>
+            <h3 class="project-title">ERP / Fintech Project <span class="placeholder-text">[Replace Me]</span></h3>
+            <p class="project-desc">
+              <span class="placeholder-text">Short project description — what it does, who it's for, and the impact it had.</span>
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag placeholder-text">[Add tech]</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PLACEHOLDER PROJECT 4 ── -->
+        <article class="project-card" data-category="api" role="listitem">
+          <div class="project-img-wrap">
+            <img
+              src="assets/img/project-placeholder.svg"
+              alt="Project screenshot placeholder"
+              class="project-img"
+              loading="lazy"
+              width="400"
+              height="220"
+            />
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View live project (placeholder)">
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="View GitHub repository (placeholder)">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category-tag">APIs &amp; Data</div>
+            <h3 class="project-title">API / Data Project <span class="placeholder-text">[Replace Me]</span></h3>
+            <p class="project-desc">
+              <span class="placeholder-text">Short project description — what it does, who it's for, and the impact it had.</span>
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag placeholder-text">[Add tech]</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PLACEHOLDER PROJECT 5 ── -->
+        <article class="project-card" data-category="web" role="listitem">
+          <div class="project-img-wrap">
+            <img
+              src="assets/img/project-placeholder.svg"
+              alt="Project screenshot placeholder"
+              class="project-img"
+              loading="lazy"
+              width="400"
+              height="220"
+            />
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View live project (placeholder)">
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="View GitHub repository (placeholder)">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category-tag">Web App</div>
+            <h3 class="project-title">Web App <span class="placeholder-text">[Replace Me]</span></h3>
+            <p class="project-desc">
+              <span class="placeholder-text">Short project description — what it does, who it's for, and the impact it had.</span>
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Angular</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag placeholder-text">[Add tech]</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PLACEHOLDER PROJECT 6 ── -->
+        <article class="project-card" data-category="ai" role="listitem">
+          <div class="project-img-wrap">
+            <img
+              src="assets/img/project-placeholder.svg"
+              alt="Project screenshot placeholder"
+              class="project-img"
+              loading="lazy"
+              width="400"
+              height="220"
+            />
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View live project (placeholder)">
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="View GitHub repository (placeholder)">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category-tag">AI &amp; ML</div>
+            <h3 class="project-title">AI Tool <span class="placeholder-text">[Replace Me]</span></h3>
+            <p class="project-desc">
+              <span class="placeholder-text">Short project description — what it does, who it's for, and the impact it had.</span>
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">CrewAI</span>
+              <span class="tech-tag placeholder-text">[Add tech]</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </section>
+
+    <!-- ══════════════════════════════
+         SECTION: SERVICES
+    ══════════════════════════════ -->
+    <section id="services" class="section services-section" aria-label="Services">
+      <div class="section-header">
+        <h2 class="section-title">My <span class="accent">Services</span></h2>
+        <div class="section-line" aria-hidden="true"></div>
+        <p class="section-subtitle">What I can build for you</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-display"></i>
+          </div>
+          <h3 class="service-title">Web Applications</h3>
+          <p class="service-desc">
+            Responsive web platforms and portals in Angular, React, and Vue.js — from design to deployment.
+          </p>
+          <ul class="service-list">
+            <li>Angular · React · Vue.js</li>
+            <li>Mobile-first, accessible UI</li>
+            <li>End-to-end delivery</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-building-gear"></i>
+          </div>
+          <h3 class="service-title">ERP &amp; Integrations</h3>
+          <p class="service-desc">
+            ERP implementation and integration — ERPNext, Frappe Framework, HR and recruitment platforms,
+            reconciliation systems, USSD and ERP integrated solutions, and core banking (Finacle).
+          </p>
+          <ul class="service-list">
+            <li>ERPNext · Frappe Framework</li>
+            <li>USSD &amp; Core Banking Integration</li>
+            <li>Reconciliation Systems</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-robot"></i>
+          </div>
+          <h3 class="service-title">AI Integration</h3>
+          <p class="service-desc">
+            LLM-powered tools for web apps and enterprise systems with Python, FastAPI, and LangChain —
+            covering document retrieval, agentic workflows, output evaluation, and call analytics.
+          </p>
+          <ul class="service-list">
+            <li>RAG &amp; Document Retrieval</li>
+            <li>Agentic Workflows (CrewAI)</li>
+            <li>IVR Analytics &amp; Reporting</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-hdd-stack-fill"></i>
+          </div>
+          <h3 class="service-title">APIs &amp; Data</h3>
+          <p class="service-desc">
+            RESTful APIs with FastAPI and Spring Boot, ERP integrations, and database design
+            in PostgreSQL, MySQL and SQLite.
+          </p>
+          <ul class="service-list">
+            <li>FastAPI · Spring Boot</li>
+            <li>PostgreSQL · MySQL · SQLite</li>
+            <li>Schema Design &amp; Optimisation</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <h3 class="service-title">Testing &amp; Support</h3>
+          <p class="service-desc">
+            End-to-end and UAT testing, root-cause debugging, and post-launch support for live systems.
+          </p>
+          <ul class="service-list">
+            <li>End-to-end &amp; UAT Testing</li>
+            <li>Root-cause Debugging</li>
+            <li>Post-launch Support</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         SECTION: CONTACT
+    ══════════════════════════════ -->
+    <section id="contact" class="section contact-section" aria-label="Contact">
+      <div class="section-header">
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <div class="section-line" aria-hidden="true"></div>
+        <p class="section-subtitle">Have a project in mind? Let's talk.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact info cards -->
+        <div class="contact-info">
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <a href="mailto:miriammuthoni29@gmail.com">miriammuthoni29@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Phone &amp; WhatsApp</h3>
+              <a href="tel:+254702944564">+254 702 944 564</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Location</h3>
+              <span>Nairobi, Kenya</span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="bi bi-linkedin"></i>
+            </div>
+            <div class="contact-details">
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/miriam-muthoni/" target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/miriam-muthoni
+              </a>
+            </div>
+          </div>
+
+          <!-- WhatsApp CTA -->
+          <a
+            href="https://wa.me/254702944564?text=Hi%20Miriam%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20project."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-whatsapp"
+            aria-label="Chat on WhatsApp"
+          >
+            <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+          </a>
+
+        </div>
+
+        <!-- Contact form -->
+        <div class="contact-form-wrap">
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/xjyypkgk"
+            method="POST"
+            novalidate
+            aria-label="Contact form"
+          >
+            <!-- Formspree form ID: xjyypkgk – delivers to miriammuthoni29@gmail.com -->
+
+            <div class="form-group">
+              <label for="contactName">Your Name <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="contactName"
+                name="name"
+                placeholder="Jane Doe"
+                required
+                autocomplete="name"
+                minlength="2"
+                aria-required="true"
+              />
+              <span class="field-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Your Email <span aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="contactEmail"
+                name="email"
+                placeholder="jane@example.com"
+                required
+                autocomplete="email"
+                aria-required="true"
+              />
+              <span class="field-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input
+                type="text"
+                id="contactSubject"
+                name="subject"
+                placeholder="Project enquiry"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message <span aria-hidden="true">*</span></label>
+              <textarea
+                id="contactMessage"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project..."
+                required
+                aria-required="true"
+                minlength="10"
+              ></textarea>
+              <span class="field-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <!-- Form status messages -->
+            <div id="formStatus" class="form-status" role="status" aria-live="polite" aria-atomic="true"></div>
+
+            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+              <span class="btn-text"><i class="bi bi-send-fill"></i> Send Message</span>
+              <span class="btn-loading" aria-hidden="true">
+                <i class="bi bi-arrow-clockwise spin"></i> Sending…
+              </span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         FOOTER
+    ══════════════════════════════ -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <p class="footer-copy">
+          &copy; <span id="footerYear"></span>
+          <strong>Miriam Muthoni Muthii</strong> · NovaAxis Systems
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/miriam-muthoni/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/Miriam-Muthii" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="mailto:miriammuthoni29@gmail.com" aria-label="Email">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+          <a href="https://wa.me/254702944564" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </main><!-- /main-content -->
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
