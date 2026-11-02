@@ -177,10 +177,11 @@ button:focus-visible {
 }
 
 .profile-img {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center top;
   border: 3px solid var(--accent);
   box-shadow: 0 0 20px var(--accent-glow);
 }
@@ -740,10 +741,13 @@ button:focus-visible {
 .about-img {
   width: 100%;
   border-radius: 16px;
-  object-fit: cover;
-  aspect-ratio: 9/11;
+  object-fit: contain;
+  object-position: top center;
+  aspect-ratio: auto;
+  max-height: 480px;
   box-shadow: var(--shadow-card);
   border: 2px solid var(--border-accent);
+  background: var(--bg-card);
 }
 
 .about-img-badge {
