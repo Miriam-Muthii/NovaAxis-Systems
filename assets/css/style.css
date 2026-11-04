@@ -934,7 +934,7 @@ a.info-value:hover { color: var(--accent); }
 /* ── 13. RESUME SECTION ───────────────────────────────────────── */
 .resume-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.6fr;
   gap: clamp(2rem, 5vw, 4rem);
   margin-bottom: 3rem;
 }
@@ -1051,20 +1051,78 @@ a.info-value:hover { color: var(--accent); }
   font-size: 0.85em;
 }
 
-/* Certifications */
-.certs-block {
-  margin-top: 1rem;
+/* Resume summary card */
+.resume-summary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.cert-title {
-  justify-content: center;
-  margin-bottom: 1.5rem;
+.resume-summary-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
 }
 
-.certs-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+.resume-summary-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--accent);
+  margin-bottom: 0.9rem;
+}
+
+.resume-summary-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.resume-summary-bio {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.resume-summary-details {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.resume-summary-details li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.resume-summary-details li i {
+  color: var(--accent);
+  flex-shrink: 0;
+  font-size: 0.85rem;
+}
+
+/* Certifications list (inside Education column) */
+.certs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
 .cert-card {
@@ -1074,8 +1132,8 @@ a.info-value:hover { color: var(--accent); }
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 1rem 1.2rem;
-  font-size: 0.85rem;
+  padding: 0.9rem 1.1rem;
+  font-size: 0.84rem;
   color: var(--text-secondary);
   transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
   line-height: 1.5;
@@ -1670,8 +1728,9 @@ a.info-value:hover { color: var(--accent); }
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .certs-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .resume-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .services-grid {
@@ -1714,14 +1773,6 @@ a.info-value:hover { color: var(--accent); }
   .resume-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .certs-grid {
-    grid-template-columns: 1fr 1fr;
   }
 
   .services-grid {
