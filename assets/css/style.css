@@ -1070,16 +1070,6 @@ a.info-value:hover { color: var(--accent); }
   background: linear-gradient(90deg, var(--accent), var(--accent-light));
 }
 
-.resume-summary-img {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center top;
-  border: 2px solid var(--accent);
-  margin-bottom: 0.9rem;
-}
-
 .resume-summary-name {
   font-size: 1.05rem;
   font-weight: 700;
