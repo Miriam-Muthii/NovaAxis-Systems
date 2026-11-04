@@ -516,6 +516,44 @@
             </div>
 
           </div>
+
+          <!-- Certifications — sits under Education in the same column on mobile,
+               but on desktop it becomes its own column via the grid -->
+          <div class="certs-col">
+            <h3 class="resume-col-title" style="margin-top: 2rem;">
+              <i class="bi bi-award-fill"></i> Certifications
+            </h3>
+            <div class="certs-list">
+              <div class="cert-card">
+                <i class="bi bi-patch-check-fill accent"></i>
+                <span>Building with the Claude API</span>
+              </div>
+              <div class="cert-card">
+                <i class="bi bi-patch-check-fill accent"></i>
+                <span>Claude Code in Action</span>
+              </div>
+              <div class="cert-card">
+                <i class="bi bi-patch-check-fill accent"></i>
+                <span>Introduction to Agent Skills</span>
+              </div>
+              <div class="cert-card">
+                <i class="bi bi-patch-check-fill accent"></i>
+                <span>Introduction to Model Context Protocol</span>
+              </div>
+              <div class="cert-card">
+                <i class="bi bi-patch-check-fill accent"></i>
+                <span>Generative AI: Intro to Large Language Models</span>
+              </div>
+              <div class="cert-card">
+                <i class="bi bi-patch-check-fill accent"></i>
+                <span>Introduction to Prompt Engineering for Generative AI (2023)</span>
+              </div>
+              <div class="cert-card">
+                <i class="bi bi-patch-check-fill accent"></i>
+                <span>Java Algorithms, Data Structures, Collections &amp; Exception Handling</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Experience column -->
@@ -593,43 +631,6 @@
         </div>
 
       </div>
-
-      <!-- Certifications -->
-      <div class="certs-block">
-        <h3 class="resume-col-title cert-title">
-          <i class="bi bi-award-fill"></i> Certifications
-        </h3>
-        <div class="certs-grid">
-          <div class="cert-card">
-            <i class="bi bi-patch-check-fill accent"></i>
-            <span>Building with the Claude API</span>
-          </div>
-          <div class="cert-card">
-            <i class="bi bi-patch-check-fill accent"></i>
-            <span>Claude Code in Action</span>
-          </div>
-          <div class="cert-card">
-            <i class="bi bi-patch-check-fill accent"></i>
-            <span>Introduction to Agent Skills</span>
-          </div>
-          <div class="cert-card">
-            <i class="bi bi-patch-check-fill accent"></i>
-            <span>Introduction to Model Context Protocol</span>
-          </div>
-          <div class="cert-card">
-            <i class="bi bi-patch-check-fill accent"></i>
-            <span>Generative AI: Introduction to Large Language Models</span>
-          </div>
-          <div class="cert-card">
-            <i class="bi bi-patch-check-fill accent"></i>
-            <span>Introduction to Prompt Engineering for Generative AI (2023)</span>
-          </div>
-          <div class="cert-card">
-            <i class="bi bi-patch-check-fill accent"></i>
-            <span>Java Algorithms, Data Structures, Collections &amp; Exception Handling</span>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- ══════════════════════════════
@@ -654,206 +655,155 @@
       <!-- Projects grid -->
       <div class="projects-grid" id="projectsGrid" role="list">
 
-        <!-- ── PLACEHOLDER PROJECT 1 ── -->
-        <article class="project-card" data-category="web" role="listitem">
-          <div class="project-img-wrap">
-            <img
-              src="assets/img/project-placeholder.svg"
-              alt="Project screenshot placeholder"
-              class="project-img"
-              loading="lazy"
-              width="400"
-              height="220"
-            />
-            <div class="project-overlay">
-              <a href="#" class="project-link" aria-label="View live project (placeholder)">
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-              <a href="#" class="project-link" aria-label="View GitHub repository (placeholder)">
-                <i class="bi bi-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-category-tag">Web App</div>
-            <h3 class="project-title">Project Title <span class="placeholder-text">[Replace Me]</span></h3>
-            <p class="project-desc">
-              <span class="placeholder-text">Short project description — what it does, who it's for, and the impact it had.</span>
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">FastAPI</span>
-              <span class="tech-tag placeholder-text">[Add tech]</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ── PLACEHOLDER PROJECT 2 ── -->
+        <!-- ── PROJECT 1: PulseAutoQA ── -->
         <article class="project-card" data-category="ai" role="listitem">
           <div class="project-img-wrap">
             <img
-              src="assets/img/project-placeholder.svg"
-              alt="Project screenshot placeholder"
+              src="assets/img/PulseAutoQA.png"
+              alt="PulseAutoQA – Automated QA Evaluation Platform"
               class="project-img"
               loading="lazy"
               width="400"
               height="220"
             />
             <div class="project-overlay">
-              <a href="#" class="project-link" aria-label="View live project (placeholder)">
+              <a href="#" class="project-link" aria-label="View live project">
                 <i class="bi bi-box-arrow-up-right"></i>
               </a>
-              <a href="#" class="project-link" aria-label="View GitHub repository (placeholder)">
+              <a href="#" class="project-link" aria-label="View GitHub repository">
                 <i class="bi bi-github"></i>
               </a>
             </div>
           </div>
           <div class="project-body">
             <div class="project-category-tag">AI &amp; ML</div>
-            <h3 class="project-title">AI Project Title <span class="placeholder-text">[Replace Me]</span></h3>
+            <h3 class="project-title">PulseAutoQA</h3>
             <p class="project-desc">
-              <span class="placeholder-text">Short project description — what it does, who it's for, and the impact it had.</span>
+              Automated QA evaluation platform for contact centres. Ingests agent conversations from voice (Genesys, CXOne), chat, and email, then uses a locally-hosted LLM to score each interaction against configurable QA scorecards — no manual listening required. Features RAG-augmented scoring against policy documents, statistical sampling, anomaly detection, trend prediction, and AI-generated agent insights via a React dashboard. Multi-tenant with role-based access across superadmins, QA leads, reviewers, and read-only roles.
             </p>
             <div class="project-tech">
               <span class="tech-tag">Python</span>
-              <span class="tech-tag">LangChain</span>
-              <span class="tech-tag placeholder-text">[Add tech]</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Ollama / vLLM</span>
+              <span class="tech-tag">RAG</span>
+              <span class="tech-tag">SQLAlchemy</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Azure CI/CD</span>
             </div>
           </div>
         </article>
 
-        <!-- ── PLACEHOLDER PROJECT 3 ── -->
+        <!-- ── PROJECT 2: Fintech ERP / Reconciliation Platform ── -->
         <article class="project-card" data-category="erp" role="listitem">
           <div class="project-img-wrap">
             <img
-              src="assets/img/project-placeholder.svg"
-              alt="Project screenshot placeholder"
+              src="assets/img/ERP.png"
+              alt="Fintech ERP Reconciliation Platform"
               class="project-img"
               loading="lazy"
               width="400"
               height="220"
             />
             <div class="project-overlay">
-              <a href="#" class="project-link" aria-label="View live project (placeholder)">
+              <a href="#" class="project-link" aria-label="View live project">
                 <i class="bi bi-box-arrow-up-right"></i>
               </a>
-              <a href="#" class="project-link" aria-label="View GitHub repository (placeholder)">
+              <a href="#" class="project-link" aria-label="View GitHub repository">
                 <i class="bi bi-github"></i>
               </a>
             </div>
           </div>
           <div class="project-body">
             <div class="project-category-tag">ERP &amp; Fintech</div>
-            <h3 class="project-title">ERP / Fintech Project <span class="placeholder-text">[Replace Me]</span></h3>
+            <h3 class="project-title">Fintech ERP &amp; Reconciliation Platform</h3>
             <p class="project-desc">
-              <span class="placeholder-text">Short project description — what it does, who it's for, and the impact it had.</span>
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Java</span>
-              <span class="tech-tag">Spring Boot</span>
-              <span class="tech-tag placeholder-text">[Add tech]</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ── PLACEHOLDER PROJECT 4 ── -->
-        <article class="project-card" data-category="api" role="listitem">
-          <div class="project-img-wrap">
-            <img
-              src="assets/img/project-placeholder.svg"
-              alt="Project screenshot placeholder"
-              class="project-img"
-              loading="lazy"
-              width="400"
-              height="220"
-            />
-            <div class="project-overlay">
-              <a href="#" class="project-link" aria-label="View live project (placeholder)">
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-              <a href="#" class="project-link" aria-label="View GitHub repository (placeholder)">
-                <i class="bi bi-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-category-tag">APIs &amp; Data</div>
-            <h3 class="project-title">API / Data Project <span class="placeholder-text">[Replace Me]</span></h3>
-            <p class="project-desc">
-              <span class="placeholder-text">Short project description — what it does, who it's for, and the impact it had.</span>
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">FastAPI</span>
-              <span class="tech-tag">PostgreSQL</span>
-              <span class="tech-tag placeholder-text">[Add tech]</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ── PLACEHOLDER PROJECT 5 ── -->
-        <article class="project-card" data-category="web" role="listitem">
-          <div class="project-img-wrap">
-            <img
-              src="assets/img/project-placeholder.svg"
-              alt="Project screenshot placeholder"
-              class="project-img"
-              loading="lazy"
-              width="400"
-              height="220"
-            />
-            <div class="project-overlay">
-              <a href="#" class="project-link" aria-label="View live project (placeholder)">
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-              <a href="#" class="project-link" aria-label="View GitHub repository (placeholder)">
-                <i class="bi bi-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-category-tag">Web App</div>
-            <h3 class="project-title">Web App <span class="placeholder-text">[Replace Me]</span></h3>
-            <p class="project-desc">
-              <span class="placeholder-text">Short project description — what it does, who it's for, and the impact it had.</span>
+              Enterprise-grade reconciliation platform deployed across multiple banks, integrating with Finacle core banking and third-party mobile money providers (M-Pesa, Airtel Money) to automate transaction matching and dispute resolution. Centralises financial data across internal banking systems, improving reconciliation accuracy by 80% and significantly reducing inter-party disputes. Serves 10,000+ users across banking operations teams.
             </p>
             <div class="project-tech">
               <span class="tech-tag">Angular</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag placeholder-text">[Add tech]</span>
+              <span class="tech-tag">Java Spring Boot</span>
+              <span class="tech-tag">Finacle</span>
+              <span class="tech-tag">RESTful APIs</span>
+              <span class="tech-tag">SQL Server</span>
             </div>
           </div>
         </article>
 
-        <!-- ── PLACEHOLDER PROJECT 6 ── -->
-        <article class="project-card" data-category="ai" role="listitem">
+        <!-- ── PROJECT 3: Tujilinde Companion (USSD + ERPNext) ── -->
+        <article class="project-card" data-category="erp" role="listitem">
           <div class="project-img-wrap">
             <img
-              src="assets/img/project-placeholder.svg"
-              alt="Project screenshot placeholder"
+              src="assets/img/Tujilinde-Figma.png"
+              alt="Tujilinde – Welfare Group Digital Platform"
               class="project-img"
               loading="lazy"
               width="400"
               height="220"
             />
             <div class="project-overlay">
-              <a href="#" class="project-link" aria-label="View live project (placeholder)">
+              <a href="#" class="project-link" aria-label="View live project">
                 <i class="bi bi-box-arrow-up-right"></i>
               </a>
-              <a href="#" class="project-link" aria-label="View GitHub repository (placeholder)">
+              <a href="#" class="project-link" aria-label="View GitHub repository">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category-tag">ERP &amp; Fintech</div>
+            <h3 class="project-title">Tujilinde – Welfare Group Platform</h3>
+            <p class="project-desc">
+              Centralised digital platform streamlining operations for welfare groups and self-help societies. Members register, contribute, and check balances directly via USSD — no smartphone needed — while administrators manage members, finances, and workflows from a unified ERPNext dashboard. Built on a three-layer architecture: an Africa's Talking USSD frontend, a Node.js middleware handling M-Pesa STK push (Daraja API) and SMS routing, and an ERPNext/Frappe Cloud backend with custom Doctypes, workflows, and real-time reporting. Automated SMS notifications and transaction alerts keep members informed at every step.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">ERPNext</span>
+              <span class="tech-tag">Frappe Framework</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">USSD</span>
+              <span class="tech-tag">M-Pesa Daraja API</span>
+              <span class="tech-tag">Africa's Talking</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">Miro</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 4: AI-Powered IVR Intent Classification Platform ── -->
+        <article class="project-card" data-category="ai" role="listitem">
+          <div class="project-img-wrap">
+            <img
+              src="assets/img/IVR.png"
+              alt="AI-Powered IVR Intent Classification Platform"
+              class="project-img"
+              loading="lazy"
+              width="400"
+              height="220"
+            />
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="View live project">
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="View GitHub repository">
                 <i class="bi bi-github"></i>
               </a>
             </div>
           </div>
           <div class="project-body">
             <div class="project-category-tag">AI &amp; ML</div>
-            <h3 class="project-title">AI Tool <span class="placeholder-text">[Replace Me]</span></h3>
+            <h3 class="project-title">AI-Powered IVR Intent Classification Platform</h3>
             <p class="project-desc">
-              <span class="placeholder-text">Short project description — what it does, who it's for, and the impact it had.</span>
+              Real-time platform that leverages LLMs and RAG-based information retrieval to interpret incoming customer requests through an organisation's IVR system — identifying relevant intents and surfacing contextually accurate information as a live guide for agents. Streamlines customer request processing, improves information accuracy, and reduces reliance on manual interpretation, leading to more consistent intent identification and measurable gains in contact centre efficiency.
             </p>
             <div class="project-tech">
+              <span class="tech-tag">Angular</span>
               <span class="tech-tag">Python</span>
-              <span class="tech-tag">CrewAI</span>
-              <span class="tech-tag placeholder-text">[Add tech]</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">LLM Integration</span>
+              <span class="tech-tag">RAG</span>
+              <span class="tech-tag">NLP</span>
             </div>
           </div>
         </article>
